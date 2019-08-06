@@ -1,0 +1,12 @@
+[submodule "Projects/PolybarServices"]
+	path = Projects/PolybarServices
+	url = git@github.com:erayaydin/polybar-services.git
+[submodule "Projects/PowerNot"]
+	path = Projects/PowerNot
+	url = git@github.com:erayaydin/powernot.git
+[submodule "Projects/X11WindowManager"]
+	path = Projects/X11WindowManager
+	url = git@github.com:erayaydin/x11-window-manager.git
+[submodule "Projects/dotfiles"]
+	path = Projects/dotfiles
+	url = git@github.com:erayaydin/dotfiles.git

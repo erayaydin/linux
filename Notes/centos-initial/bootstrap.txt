@@ -1,0 +1,50 @@
+(local) $ ssh root@{{server_ip}}
+$ adduser eray
+$ passwd eray
+$ gpasswd -a eray wheel
+$ yum install -y vim
+$ vim /etc/ssh/sshd_config
+  - PasswordAuthentication -> yes
+(local) $ ssh-copy-id eray@{{server_ip}}
+$ vim /etc/ssh/sshd_config
+  - PasswordAuthentication -> no
+  - PermitRootLogin -> no
+$ systemctl restart sshd
+
+$ sudo yum install -y firewalld firewall-config
+
+$ sudo firewall-cmd --permanent --add-service=ssh
+$ sudo firewall-cmd --permanent --add-service=http
+$ sudo firewall-cmd --permanent --add-service=https
+$ sudo firewall-cmd --permanent --add-service=smtp
+
+$ sudo firewall-cmd --reload
+$ sudo systemctl enable firewalld
+
+$ sudo yum install -y ntp
+$ sudo systemctl start ntpd
+$ sudo systemctl enable ntpd
+
+$ sudo yum install -y wget
+# wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+# rpm -ivh epel-release-latest-7.noarch.rpm
+$ sudo yum install -y htop
+
+$ sudo dd if=/dev/zero of=/swapfile count=4096 bs=1MiB
+$ sudo chmod 600 /swapfile
+$ sudo mkswap /swapfile
+$ sudo swapon /swapfile
+$ sudo sh -c 'echo "/swapfile none swap sw 0 0" >> /etc/fstab'
+
+$ SELINUX...
+
+$ sudo yum install -y nginx
+$ sudo systemctl start nginx
+$ sudo systemctl enable nginx
+
+$ sudo yum install -y mariadb-server mariadb
+$ sudo systemctl start mariadb
+$ sudo systemctl enable mariadb
+$ sudo mysql_secure_installation
+
+$ sudo yum install -y yum-utils

@@ -1,0 +1,65 @@
+Eray's Vim Tutorial
+===================
+
+0) Modes
+
+- Command Mode (ESC)
+- Insert Mode (I)
+
+1) Moving Around
+You can moving around with
+
+     K
+   H   L
+     J
+
+2) Delete single char
+
+You can delete single character with 'x'.
+
+3) Inserting character
+
+You can press 'i' to get insert mode. (INSERT MODE)
+You can press 'a' to get append mode. (INSERT MODE)
+
+4) Saving Changes and Quiting
+
+You can save current edits with ':w' and with ':q'.
+You can use ':wq' for save and quit.
+You can use 'Shift+zz' for save and quit.
+
+- NOTES -
+dw = d->Delete, w->Word
+d$ = d->Delete, $->EndOfLine
+de = d->Delete, e->EndOfWord
+d0 = d->Delete, 0->StartOfLine
+d2e = d->Delete, 2e->Second EndOfWord
+d4w = d->Delete, 4w->4th Word
+c = c->change
+cw = c->change, w->word
+
+gg = Begging of file
+G = End of file
+nG = Nth line of file
+
+/ = Search forward
+? = Search backward 
+
+:s/search/replace/ = replace 'search' with 'replace' for only 1 occu
+:s/search/replace/g = replace 'search' with 'replace' for all occu in 1 line
+:20,100s/search/replace = replace 'search' with 'replace' for only 1 occu in 20 and 100 lines
+
+CTRL+g = Instruct file
+
+:!ls = Execute 'ls' on shell
+
+:w filename.txt = save buffer as "filename.txt"
+
+:r retrieve.txt = get text from 'retrieve.txt' to curr cursor
+
+o = below newline
+O = over newline
+
+{
+
+}      
