@@ -10,6 +10,7 @@
 [submodule "Projects/xlockdown"]
 	path = Projects/xlockdown
 	url = git@github.com:erayaydin/xlockdown.git
+  branch = main
 [submodule "Projects/dotfiles"]
 	path = Projects/dotfiles
 	url = git@github.com:erayaydin/dotfiles.git
