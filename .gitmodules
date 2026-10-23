@@ -7,9 +7,6 @@
 [submodule "Projects/X11WindowManager"]
 	path = Projects/X11WindowManager
 	url = git@github.com:erayaydin/x11-window-manager.git
-[submodule "Projects/dotfiles"]
-	path = Projects/dotfiles
-	url = git@github.com:erayaydin/dotfiles.git
 [submodule "Projects/xlockdown"]
 	path = Projects/xlockdown
 	url = git@github.com:erayaydin/xlockdown.git
