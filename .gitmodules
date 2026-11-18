@@ -15,3 +15,7 @@
 	path = Projects/dotfiles
 	url = git@github.com:erayaydin/dotfiles.git
 	branch = main
+[submodule "Projects/sanalyer"]
+	path = Projects/sanalyer
+	url = ssh://aur@aur.archlinux.org/sanalyer-bin.git
+	branch = master
